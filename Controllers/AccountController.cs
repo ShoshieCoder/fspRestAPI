@@ -18,7 +18,7 @@ namespace RestAPI.Controllers
     {
         [ResponseType(typeof(string))]
         [Route("api/register", Name = "Register")]
-        [HttpPut]
+        [HttpPost]
         public IHttpActionResult Register([FromBody]Customer newCustomer)
         {
             LoggedInAdministratorFacade facade = new LoggedInAdministratorFacade();
